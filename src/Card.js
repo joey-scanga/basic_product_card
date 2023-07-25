@@ -6,7 +6,7 @@ import red_shirt_img from './red_shirt.jpg';
 import blue_shirt_img from './blue_shirt.jpg';
 
 
-export default function Card( { price, former_price, default_item }) {
+export default function Card() {
     const shirts = {
         white_shirt: {
             img: white_shirt_img,
