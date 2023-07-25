@@ -47,13 +47,13 @@ export default function Card( { price, former_price, default_item }) {
         }
     }
 
-    function handleAddItem(e) {
+    function handleAddItem() {
         setItemNo(num => {
             return num + 1
         })
     }
 
-    function handleMinusItem(e) {
+    function handleMinusItem() {
         setItemNo(num => {
             if (num > 0) {
                 return num - 1
@@ -63,7 +63,7 @@ export default function Card( { price, former_price, default_item }) {
         })
     }
 
-    function handleAddToCart(e) {
+    function handleAddToCart() {
         if (itemNo <= 0) {
             return
         }
@@ -94,6 +94,7 @@ export default function Card( { price, former_price, default_item }) {
                         className='add-item'
                         onClick={handleAddItem}>+</button>
                 </div>
+                4
 
                 <div className='color-swatcher'>
                     <h5>Color: </h5>
